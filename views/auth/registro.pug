@@ -1,1 +1,31 @@
-h2 registro
+extends ../layouts/index
+
+block content
+  div
+    h1.text-4xl.text-center.font-extrabold Bienes
+      span.text-indigo-600.font-medium Raices
+    h2.text-center.text-2xl.text-gray-700.mt-6.font-bold= pagina
+    div.mt-8.max-w-md.mx-auto.p-6
+      div.bg-white.shadow.rounded-lg.overflow-hidden
+        form(action='/crear-cuenta' method='POST' class='space-y-6 p-6' id='formulario')
+          div.mb-6
+            label.block.text-gray-700.text-sm.font-bold.mb-2(for='nombre') Nombre
+            input#nombre.appearance-none.border.border-gray-200.p-3.w-full.rounded-md.outline-none
+          div.mb-6
+            label.block.text-gray-700.text-sm.font-bold.mb-2(for='email') Email
+            input#email.appearance-none.border.border-gray-200.p-3.w-full.rounded-md.outline-none
+          div.mb-6
+            label.block.text-gray-700.text-sm.font-bold.mb-2(for='password') Password
+            input#password.appearance-none.border.border-gray-200.p-3.w-full.outline-none
+          div.mb-6
+            label.block.text-gray-700.text-sm.font-bold.mb-2(for='confirmar') Confirmar Password
+            input#confirmar.appearance-none.border.border-gray-200.p-3.w-full.outline-none
+            
+            input.bg-indigo-600.bg-indigo-700.text-white.font-bold.py-3.px-4.rounded-md.cursor-pointer.w-full.mt-6(type='submit' value='Registrarse')
+          
+          
+          
+        
+      
+
+

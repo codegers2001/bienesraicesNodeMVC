@@ -3,9 +3,12 @@ html(lang="es")
       head
             meta(charset="UTF-8")
             meta(name="viewport", content="width=device-width, initial-scale=1.0")
-            title Document
-            link(rel="stylesheet", href="/public/css/styles.css")
-      body.min-h-screen.bg-gray-50
+            title Bienes Raices - #{pagina}
+            link(rel="stylesheet", href="/css/styles.css")
+            link(rel="stylesheet", href="/css/normalize.css")
+            link(rel="stylesheet", href="/css/main.css")
+            link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
+      body.bg-gray-50
             main.container.mx-auto.my-10
                   block content
-            script(src="/public/js/app.js") 
+      script(src="/js/scripts.js")
