@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "css": "postcss public/css/tailwind.css -o public/css/styles.css"
   },
   "keywords": [
     "nodejs",
@@ -17,10 +18,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.3",
-    "pug": "^3.0.2",
-    "tailwindcss": "^3.4.1"
+    "pug": "^3.0.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "autoprefixer": "^10.4.18",
+    "nodemon": "^3.1.0",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.1"
   }
 }
