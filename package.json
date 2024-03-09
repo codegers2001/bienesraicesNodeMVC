@@ -1,0 +1,24 @@
+{
+  "name": "bienesraicesnodemvc",
+  "version": "1.0.0",
+  "description": "proyecto de bienes raices con nodejs mvc",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mvc",
+    "bienesraices"
+  ],
+  "author": "Lincol Eulogio Huanca",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
