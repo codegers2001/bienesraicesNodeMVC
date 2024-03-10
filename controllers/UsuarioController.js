@@ -3,7 +3,7 @@ const formularioLogin = (req, res) => {
 };
 
 const formularioRegistro = (req, res) => {
-  res.render("auth/registro", { pagina: "Crear Cuenta" });
+  res.render("auth/crear-cuenta", { pagina: "Crear Cuenta" });
 };
 
 const formularioOlvidePassword = (req, res) => {
