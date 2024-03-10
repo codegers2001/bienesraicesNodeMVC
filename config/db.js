@@ -3,6 +3,7 @@ import { Sequelize } from "sequelize";
 const sequelize = new Sequelize("bienesraicesnode", "root", "71916352", {
   host: "localhost",
   dialect: "mysql",
+  port: "3306",
   define: {
     timestamps: false,
   },
