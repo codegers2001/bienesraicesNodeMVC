@@ -5,7 +5,10 @@ import { formularioLogin, formularioRegistro, formularioOlvidePassword } from ".
 const router = express.Router();
 
 router.get("/login", formularioLogin );
+
 router.get("/crear-cuenta", formularioRegistro );
+router.post("/crear-cuenta", registrarUsuario );
+
 router.get("/olvide-password", formularioOlvidePassword);
 
 
