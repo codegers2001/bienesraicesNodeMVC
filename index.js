@@ -5,6 +5,7 @@ import  db from "./config/db.js";
 // Conexión a la base de datos
 
 db.authenticate()
+  db.sync()
   .then(() => {
     console.log("Conexión a la base de datos exitosa");
   })
@@ -13,6 +14,10 @@ db.authenticate()
   });
 
 const app = express();
+
+  // habilitar la lectura de datos en el formulario
+  app.use(express.urlencoded({ extended: true }));
+
 const port = 3000;
 
 // habilitar el pug
