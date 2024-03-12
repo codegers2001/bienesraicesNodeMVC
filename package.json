@@ -24,6 +24,7 @@
     "mysql2": "^3.9.2",
     "pug": "^3.0.2",
     "sequelize": "^6.37.1",
+    "sweetalert2": "^11.10.6",
     "tedious": "^18.1.0"
   },
   "devDependencies": {
